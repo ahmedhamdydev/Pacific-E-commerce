@@ -1,0 +1,19 @@
+.notFoundContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.notFoundContainer img{
+    width: 90%;
+    max-width: 60vh;
+    margin-bottom: 20px;
+}
+.notFoundContainer h5{
+text-transform: capitalize;
+margin-bottom: 50px;
+}
+.notFoundContainer h5 > a{
+    text-decoration: none;
+    color: #f46f4d;
+}

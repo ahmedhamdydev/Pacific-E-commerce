@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.formAddProductContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.formAddProductContainer >div:first-of-type{
+    width: 60%;
+    margin-bottom: 20px;
+}
+.formAddProductContainer >div:first-of-type> div ,.brandCategory {
+    background-color: #e6e6e66a;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.formAddProductContainer >div:last-of-type{
+    width: 35%;
+    background-color: #e6e6e66a;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.brandCategory{
+    margin: 20px 0;
+}
+.brandCategory  input , .brandCategory select {
+    width: 95%;
+    /* margin: 0 auto; */
+}
+.brandCategory select:last-child{
+    max-height: 200px ;
+}
+.formAddProductContainer label,.pColor, .brandCategory label{
+    color: #ED7A56;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.addProductInupt{
+    
+    width: 90%;
+}
+.formSubGroup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.subGroup{
+    width: 45%;
+}
+.subGroup > div{
+    display: flex;
+    justify-content: start;
+    
+}
+ .formGroubSubInput{
+    
+    border:  none;
+    border-bottom: 1px solid #0B0f28;
+    padding: 5px;
+    outline: none;
+    margin-bottom: 5px !important;
+    margin-right: 10px !important;
+
+}
+.colorInput,.size{
+    width: 150px;
+}
+.subGroup button{
+width: 30px;
+height: 30px;
+background-color: #ef9e86;
+color: black;
+border: none;
+outline: none;
+}
+
+.displaySizes{
+    background-color: #ef9e86;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px ;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.priceConatiner{
+    width: 45%;
+}
+.priceConatiner > .subGroup{
+    width: 100%;
+}
+.uploadImgProduct{
+    display: block;
+    width: 95%;
+    padding: 100px 30px;
+    text-align: center;
+    color: black !important;
+    cursor: pointer;
+    background-color: #EEEEEE;
+    border: 1px dashed grey;
+    font-size: 12px;
+}
+.uploadImgProduct i{
+    display: block;
+    color: #ED7A56;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+@media (max-width: 992px) {
+    .formAddProductContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .formAddProductContainer >div{
+        width: 90% !important;
+        margin-bottom: 50px;
+    }
+}

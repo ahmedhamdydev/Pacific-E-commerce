@@ -1,0 +1,57 @@
+.checkout{
+    margin: 30px 70px;
+    text-transform: capitalize;
+}
+.checkOutContainer,.copon{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+.checkOutContainer{
+    padding:  40px;
+}
+.checkOutContainer > div {
+    width: 35%;
+}
+.checkOutContainer >div:first-of-type{
+    margin-top: 20px;
+}
+.checkout input,.checkout select {
+    margin-top: 7px;
+}
+.copon {
+    margin-top: 20px;
+}
+.copon button{
+    font-size: 14px;
+}
+.copon input {
+    border: 1px solid #ED7A56;
+}
+
+@media (max-width:1112px) {
+    .checkOutContainer > div{
+        width: 40%;
+    }
+}
+@media (max-width:992px) {
+    .checkOutContainer > div{
+        width: 45%;
+        font-size: 12px;
+    }
+    .copon button{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .checkOutContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .checkOutContainer > div{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}

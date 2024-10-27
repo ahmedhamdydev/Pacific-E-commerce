@@ -1,0 +1,24 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inknut Antiqua", serif;
+  /* text-transform: capitalize; */
+}html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* #root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+} */
+
+.main-content {
+  flex: 1;
+}
+
+.bg-main-color {
+  background-color: #EF9E86;
+}

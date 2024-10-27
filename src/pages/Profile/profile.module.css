@@ -1,0 +1,22 @@
+.profile{
+    display: flex;
+}
+.profileContent{
+    width: 80%;
+    padding: 50px;
+}
+@media (max-width:992px) {
+    .profileContent{
+        width: 70%;
+    }
+}
+@media (max-width:768px) {
+    .profile{
+        flex-direction: column;
+    }
+    .profileContent{
+        width: 100%;
+        padding: 50px 20px;
+    }
+
+}

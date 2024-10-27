@@ -1,0 +1,22 @@
+.contactCard{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    padding-left: 20px;
+    margin-bottom: 15px;
+}
+.contactCard i {
+    color: #f46f46;
+    margin-right: 20px;
+    font-size: 20px;
+}
+.contactCard div h6{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+
+.contactCard div p{
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #666666;
+}

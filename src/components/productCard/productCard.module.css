@@ -1,0 +1,115 @@
+.productCard{
+    width: 24%;
+}
+.productCardImg{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ef9e86;
+    position: relative;
+    border-radius: 5px;
+}
+.productCardImg{
+    width: 100%;
+    height: 100%;
+}
+
+.productCardImgLayout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: none;
+}
+.productCardImgLayout > .layout{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+.heart{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 20px;
+    color: white;
+}
+.productCardImgLayout button{
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    text-transform: capitalize;
+    font-size: 12px;
+    padding:7px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.productsBtn{
+    position: relative;
+    bottom: 20%;
+    left: 5%;
+    margin-bottom: 10px;
+}
+@media (max-width:1400px) and (min-width:992px) {
+    .productsBtn{
+        bottom: 30% ;
+    }
+    .productCardImgLayout button{
+        font-size: 10px !important;
+        width: 90%;
+    }
+}
+
+.productsBtn button:hover{
+    background-color: #f46f4d;
+    border: none;
+}
+.productCardImg:hover .productCardImgLayout{
+    display: block;
+}
+.productCardRate{
+    margin-top: 15px !important;
+}
+.productCardRate i{
+    color:#e6e6e6;
+    margin-top: 5px;
+}
+
+.productCardRate i.active{
+    color: gold;
+}
+.productTitle{
+    margin: 10px 0;
+}
+
+.productPrice{
+    display: flex;
+    justify-content: start;    
+}
+.productPrice > p:first-of-type{
+    color: #656565;
+    text-decoration: line-through;
+    text-decoration-color: #656565;
+    -moz-text-decoration-color: #656565;
+    margin-right: 20px;
+}
+@media (max-width:1400px) {
+    .productCard{
+        width: 30%;
+    }
+}
+@media (max-width:992px) {
+    .productCard{
+        width: 45%;
+    }
+}
+@media (max-width:768px) {
+    .productCard{
+        width: 90%;
+        margin: auto;
+    }
+}

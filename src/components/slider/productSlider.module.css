@@ -1,0 +1,42 @@
+.sliderContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 80px;
+    height: fit-content;
+
+}
+.indecator button {
+    border: 1px solid #f46f4d !important; 
+    border-radius: 50%; 
+    width: 20px !important; 
+    height:20px !important;
+    margin: 0 5px; 
+    background-color: #f46f4d !important;
+    transition: background-color 0.3s; 
+}
+.psroductSliderCardsContainer{
+    width: 23%;
+}
+@media (max-width: 992px) {
+    .psroductSliderCardsContainer{
+        width: 45%;
+    }
+}
+@media (max-width: 767px) {
+    .psroductSliderCardsContainer{
+        width: 95%;
+    }
+    .sliderContent{
+        justify-content: center;
+    }
+}
+
+.indecator button.active {
+    background-color: #f46f4d !important; 
+}
+
+.indecator button:hover {
+    background-color: rgba(255, 255, 255, 0.8); 
+}

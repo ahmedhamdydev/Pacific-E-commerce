@@ -1,0 +1,77 @@
+/* ProductPage.css */
+.product-header {
+    background-image: url("../../assets/productCat.avif");
+    background-size: cover;
+    background-position: center;
+    height: 40vh; /* Adjust height */
+    position: relative;
+  }
+  
+  .product-title {
+    font-size: 2.5rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Optional background for better contrast */
+    padding: 20px;
+    border-radius: 50%; /* Circular background */
+  }
+  
+  .breadcrumb {
+    background-color: transparent;
+  }
+  
+  .breadcrumb-item a {
+    color: white; /* Make breadcrumb links white */
+    text-decoration: none;
+  }
+  
+  .breadcrumb-item.active {
+    color: #f0f0f0; /* Light color for the active breadcrumb */
+  }
+  
+  .container {
+    padding-top: 20px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    max-height: 200px;
+    object-fit: cover;
+  }
+  
+  
+  .fixedSizeImg {
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+  }
+  
+  
+  .fixedSizePic {
+      width: 400px;
+      height: 350px;
+      object-fit: cover;
+    }
+  
+  
+    .productsCollection {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 40px;
+      width: 100%;
+    }
+    
+    .productsCollection > div {
+      width: 32%; 
+      margin-bottom: 20px; 
+    }
+    
+    img {
+      width: 100%;
+      height: auto; 
+      object-fit: cover; 
+    }
+    

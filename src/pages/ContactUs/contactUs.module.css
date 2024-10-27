@@ -1,0 +1,46 @@
+.contactContiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+.contactInfo ,.formContainer , .contactContiner img{
+    width: 32%;
+}
+.contactInfo h2 , .formContainer h2{
+    text-transform: capitalize;
+    margin-bottom: 50px;
+}
+.contactInfo p{
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+@media (max-width:992px) {
+    .contactInfoCard{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .contactInfo{
+        width: 97%;
+        margin: 30px auto;
+        align-self: center;
+    }
+    .formContainer , .contactContiner img{
+        width: 48%;
+    }
+}
+@media (max-width:767px) {
+    .contactInfoCard{
+        display: block;
+    }
+    .contactContiner{
+        justify-content: center;
+    }
+    .formContainer , .contactContiner img{
+        width: 97%;
+        margin: 30px ;
+    }
+}

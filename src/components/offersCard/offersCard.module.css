@@ -1,0 +1,82 @@
+.offerCard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0 70px 50px ;
+    text-transform: capitalize;
+    position: relative;
+    width: 45%;
+    background-image: linear-gradient(to right,#F7E2DD, transparent);
+    
+}
+.offerCard img{
+    position: absolute;
+    width: 60%;
+    right: -100px;
+}
+.offerText{
+    width: 50%;
+}
+.offerText> p {
+    color: #656565;
+}
+.offerText h2{
+    color: #3f4146;
+    margin: 30px 0 ;
+    font-size: 25px;
+    line-height: 1.5;
+}
+.offerText button{    
+    background-color: #f46f4d;
+    border: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 12px;
+    padding:7px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.countdown{
+    display: flex;
+    position: absolute;
+    bottom: 7%;
+    left: 30%;
+    align-items: center;
+    justify-content: center;
+}
+.countdownNumber{
+    margin-right: 15px;
+
+}
+.countdownNumber p{
+    font-size: 12px;
+    color: #656565;
+    margin-bottom: 5px;
+    padding: 0;
+}
+.countdownNumber span{
+    display: inline-block;
+    background-color: #3f4146;
+    color: white;
+    width: 25px;
+    height: 25px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+@media (max-width:1520px) {
+    
+    .offerCard{
+        width: 80%;
+        margin: 30px auto;
+    }
+    .offerCard img{
+        right: -50px;
+    }
+}

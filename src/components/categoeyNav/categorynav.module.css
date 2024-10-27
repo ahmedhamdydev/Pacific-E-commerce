@@ -1,0 +1,70 @@
+
+
+ /* Main category dropdown container */
+.categoryDropdown {
+    position: relative;
+    width: 200px;
+    
+}
+/* Main category toggle button */
+.categoryDropdownToggle {
+    padding: 10px;
+    background-color: white;
+
+    cursor: pointer;
+    /* border-radius: 4px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.categoryDropdownToggle i{
+    color: #ED7A56;
+}
+/* Dropdown menu for main categories */
+.categoriesDropdownMenu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    min-height: 200px;
+    /* overflow-y: auto; */
+    border-radius: 4px;
+}
+
+/* Individual category item in the dropdown */
+.categoryItem {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+
+.categoryItem:hover {
+    background-color: #f0f0f0;
+}
+
+/* Subcategories dropdown positioned outside and to the right */
+.subCategoryDropdown {
+    position: absolute;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    width: 200px;
+    top: 0;
+    left: calc(100%); /* Positions it to the right, with 10px gap */
+    z-index: 999; /* Ensure it's behind the main dropdown */
+}
+
+/* Styling for each subcategory item */
+.subCategoryItem {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+}
+
+.subCategoryItem:hover {
+    background-color: #ED7A56;
+    color: white;
+}
